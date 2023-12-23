@@ -25,7 +25,8 @@
             /* background-position: center; */
             /* opacity: 0.8;     */
             /* background-image: linear-gradient(to bottom, rgb(255, 0, 0), white); */
-            background-image: linear-gradient(to bottom, rgba(189, 227, 244, 0.365), white);
+            background-image: linear-gradient(to bottom, rgb(189, 227, 244), white);
+
             position: relative;
             justify-content: center;
             align-items: center;
@@ -54,6 +55,8 @@
             align-items: center;
             font-size: 4vh;
             border-bottom: 1px solid grey;
+            padding: 5vh;
+
 
         }
 
@@ -65,21 +68,14 @@
             font-size: 2em;
             font-weight: bold;
         }
-
-        .nav {
-            border-left: 2px solid #ccc;
-        }
-
         .nav-features {
             padding: 1px 10px;
             font-size: 1em;
             text-decoration: none;
             color: white;
-            border-right: 2px solid #ccc;
-
         }
 
-      
+
         #form {
             /* text-align: center; */
             margin: 10px;
@@ -143,43 +139,58 @@
         }
 
         .main {
-            margin-top: 10vh;
-            margin-bottom: 10vh;
-            background-color: black;
+            margin-top: 15vh;
+            margin-bottom: 15vh;
+            /* background-color: black; */
             width: 100%;
-            height: 70%;
+            height: 70vh;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
+            /* text-align: center; */
         }
-          .details {
-            width: 40%;
-            height: 75 vh;
+
+        .details {
+            width: 30%;
+            height: 100%;
             background-color: white;
-            /* align-self: center; */
-            /* margin: 4vh auto; */
+
             border-radius: 3px;
             border: 1px solid grey;
             text-align: center;
-
-        }
-
-
-        .info
-        {
-            width: 40%;
-            color: white;
-            background-color: grey;
-            border: 1px solid black;
-            /* margin: 10px; */
             padding: 10px;
-            align-self: stretch;
+            font-size: 3vw;
+
+
 
         }
 
 
+        .info {
+            height: 100%;
+            width: 30%;
+            background-color: white;
+            border-radius: 3px;
+            border: 1px solid grey;
+            padding: 1% 6%;
+            align-self: stretch;
+            font-size: 1.5vw;
 
-        /* home page */
+
+
+        }
+
+        .info:hover,
+        .details:hover {
+            box-shadow: 0 0 10px black;
+        }
+
+
+
+        /* register */
+        .registerr {
+            font-size: 1.5vw;
+        }
     </style>
 </head>
 
@@ -200,22 +211,25 @@
         </div>
         <div class="main">
             <div class="details">
-                <div class="create">Enter your details for registration</div>
+                <div class="registerr">Enter your details for registration</div>
                 <form id="form">
                     <input required type="text" placeholder="Name"> <br>
                     <input required type="number" placeholder="Whatsapp Phone number"> <br>
                     <input required type="emal" placeholder="Email id"> <br>
-                    <label for="payment_screenshot">Payment Screenshot (max size 2MB):</label>
-                    <input type="file" id="payment_screenshot" name="payment_screenshot" accept="image/*">
-                    <button type="submit" value="Submit">
+                    <input placeholder="CSV file" required type="file" name="file" id="file" accept=".csv">
+                    <button type="submit"> Enter</button>
                 </form>
             </div>
             <div class="info">
                 <p>Additional Information:</p>
                 <ul>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Consectetur adipiscing elit.</li>
+                    <li>Enter the details correctly</li>
+                    <li> Push the CSV file in it</li>
+                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, quas!</li>
                     <li>Nulla vehicula felis ac velit fermentum, nec facilisis felis rhoncus.</li>
+                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, quas!</li>
+                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, quas!</li>
+
                 </ul>
             </div>
         </div>

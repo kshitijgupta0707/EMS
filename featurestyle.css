@@ -13,6 +13,7 @@
     align-items: center;
     justify-content: center;
     z-index: 0;
+    /* min-height: 100vh; */
 }
 
 .footer {
@@ -20,14 +21,14 @@
     background-color: rgb(103, 100, 100);
     text-align: center;
     padding: 1vh;
-    position: sticky;
+    position: fixed;
     bottom: 0;
     color: white;
     font-size: 2.4vh;
 }
 
 .header {
-    /* height: 9vh; */
+    height: 9%;
     width: 100%;
     background-color: black;
     color: white;
@@ -36,8 +37,10 @@
     align-items: center;
     font-size: 4vh;
     border-bottom: 1px solid grey;
-    position: sticky;
+    position: fixed;
     top: 0;
+    padding: 1vh;
+    /* z-index: 0; */
 }
 
 .heading {
@@ -49,17 +52,11 @@
     font-weight: bold;
 }
 
-.nav {
-    border-left: 2px solid #ccc;
-}
-
 .nav-features {
     padding: 1px 10px;
     font-size: 1em;
     text-decoration: none;
     color: white;
-    border-right: 2px solid #ccc;
-
 }
 
 
@@ -99,18 +96,19 @@ a:hover {
     z-index: -1;
     border-radius: 50%;
 }
-.box
-   {
-    margin-top: 14vh;
-    padding: 2vh;
-    /* text-align: center;  */
+
+.box {
+        max-height: 1000px;
+    margin-top: 30%;
+    /* margin-bottom: 10%; */
     width: 90%;
+    /* height: 50%; */
+    text-align: center;
     /* border: 1px solid black; */
-    margin-bottom: 10vh;
-   } 
-   .service-feature
-   { 
-    
+}
+
+.service-feature {
+
     width: 80%;
     background-color: rgba(255, 255, 255, 0.4);
     /* opacity: 0.4; */
@@ -119,15 +117,15 @@ a:hover {
     border: 1px solid black;
     padding: 3% 8%;
     margin: 10px auto;
-   } 
-   .subHead
-   {
+}
+
+.subHead {
     font-size: 4vh;
     text-align: left;
-     margin-bottom: 1vh;
-   }
-   .service-feature:hover
-   {
+    margin-bottom: 1vh;
+}
+
+.service-feature:hover {
     box-shadow: 0 0 10px black;
-    transform: scale(1.01,1.01);
-   }
+    transform: scale(1.01, 1.01);
+}
