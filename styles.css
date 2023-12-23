@@ -48,6 +48,7 @@ background-image: linear-gradient(to bottom, rgb(189, 227, 244), white);
 
 .heading {
     font-size: 0.7em;
+    font-family: nunito;
 }
 .ems {
     font-size: 2em;
@@ -162,6 +163,7 @@ a:hover{
     margin-top: 6rem;
     font-size: 2rem;
     font-weight: bold ;
+    font-family: nunito;
    }
    .h2
    {
